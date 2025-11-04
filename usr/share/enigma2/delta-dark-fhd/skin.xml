@@ -10,7 +10,7 @@
     <resolution bpp="32" xres="1920" yres="1080" />
   </output>
   <fonts>
-    <font name="Regular" filename="LiberationSans-Regular.ttf" scale="100" />
+    <font name="Regular" filename="HandelGotD.ttf" scale="100" />
     <font name="LCD" filename="lcd.ttf" scale="100" />
     <font name="Console" filename="tuxtxt.ttf" scale="100" />
     <font name="Fixed" filename="andale.ttf" scale="100" />
