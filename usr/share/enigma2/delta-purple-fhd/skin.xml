@@ -263,147 +263,160 @@
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
+	
   <!-- Button Graphic Templates -->
-  <screen name="ButtonGraphicRed">
-    <widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="buttons/red.png" position="192,1032" size="34,34" zPosition="1" alphatest="blend">
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap objectTypes="key_red,Button,Label" pixmap="buttons/red.png" position="192,1032" size="34,34" zPosition="1" alphatest="blend" />
-  </screen>
-  <screen name="ButtonGraphicGreen">
-    <widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="buttons/green.png" position="628,1032" size="34,34" zPosition="1" alphatest="blend">
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap objectTypes="key_green,Button,Label" pixmap="buttons/green.png" position="628,1032" size="34,34" zPosition="1" alphatest="blend" />
-  </screen>
-  <screen name="ButtonGraphicYellow">
-    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="buttons/yellow.png" position="1064,1032" size="34,34" zPosition="1" alphatest="blend">
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap objectTypes="key_yellow,Button,Label" pixmap="buttons/yellow.png" position="1064,1032" size="34,34" zPosition="1" alphatest="blend" />
-  </screen>
-  <screen name="ButtonGraphicBlue">
-    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="buttons/blue.png" position="1500,1032" size="34,34" zPosition="1" alphatest="blend">
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap objectTypes="key_blue,Button,Label" pixmap="buttons/blue.png" position="1500,1032" size="34,34" zPosition="1" alphatest="blend" />
-  </screen>
-  <!-- Button Text Templates -->
-  <screen name="ButtonTextRed">
-    <widget objectTypes="key_red,Label,Button" name="key_red" position="242,1030" size="370,38" backgroundColor="transparent" zPosition="1" transparent="1" font="Regular;34" halign="left" />
-    <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="242,1030" size="370,38" backgroundColor="transparent" zPosition="2" transparent="1" font="Regular;34" halign="left" />
-  </screen>
-  <screen name="ButtonTextGreen">
-    <widget objectTypes="key_green,Label,Button" name="key_green" position="678,1030" size="370,38" backgroundColor="transparent" zPosition="1" transparent="1" font="Regular;34" halign="left" />
-    <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="678,1030" size="370,38" backgroundColor="transparent" zPosition="2" transparent="1" font="Regular;34" halign="left" />
-  </screen>
-  <screen name="ButtonTextYellow">
-    <widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="1114,1030" size="370,38" backgroundColor="transparent" zPosition="1" transparent="1" font="Regular;34" halign="left" />
-    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="1114,1030" size="370,38" backgroundColor="transparent" zPosition="2" transparent="1" font="Regular;34" halign="left" />
-  </screen>
-  <screen name="ButtonTextBlue">
-    <widget objectTypes="key_blue,Label,Button" name="key_blue" position="1550,1030" size="370,38" backgroundColor="transparent" zPosition="1" transparent="1" font="Regular;34" halign="left" />
-    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1550,1030" size="370,38" backgroundColor="transparent" zPosition="2" transparent="1" font="Regular;34" halign="left" />
-  </screen>
-  <!-- Individual Button Templates -->
-  <screen name="ButtonRed">
-    <panel name="ButtonGraphicRed" />
-    <panel name="ButtonTextRed" />
-  </screen>
-  <screen name="ButtonGreen">
-    <panel name="ButtonGraphicGreen" />
-    <panel name="ButtonTextGreen" />
-  </screen>
-  <screen name="ButtonYellow">
-    <panel name="ButtonGraphicYellow" />
-    <panel name="ButtonTextYellow" />
-  </screen>
-  <screen name="ButtonBlue">
-    <panel name="ButtonGraphicBlue" />
-    <panel name="ButtonTextBlue" />
-  </screen>
-  <!-- Buttons Template -->
-  <screen name="ButtonTemplate">
-    <panel name="ButtonRed" />
-    <panel name="ButtonGreen" />
-    <panel name="ButtonYellow" />
-    <panel name="ButtonBlue" />
-  </screen>
-  <screen name="KeyBooleanTemplate">
-    <panel name="KeyMenuAutoTemplate" />
-    <panel name="KeyInfoAutoTemplate" />
-    <panel name="VKeyIconPanel" />
-  </screen>
-  <screen name="KeyMenuAutoTemplate">
-    <!-- show with Components.Sources.Boolean -->
-    <widget source="key_menu" conditional="key_menu" render="Pixmap" pixmap="buttons/key_menu.png" alphatest="blend" position="82,1031" size="52,38">
-      <convert type="ConditionalShowHide" />
-    </widget>
-  </screen>
-  <screen name="KeyInfoAutoTemplate">
-    <!-- show with Components.Sources.Boolean -->
-    <widget source="key_info" conditional="key_info" render="Pixmap" pixmap="buttons/key_info.png" alphatest="blend" position="135,1031" size="52,38">
-      <convert type="ConditionalShowHide" />
-    </widget>
-  </screen>
-  <screen name="KeyChannelTemplate">
-    <ePixmap pixmap="buttons/key_channel.png" alphatest="blend" position="30,1031" size="52,38" />
-  </screen>
-  <screen name="KeyMenuTemplate">
-    <ePixmap pixmap="buttons/key_menu.png" alphatest="blend" position="82,1031" size="52,38" />
-  </screen>
-  <screen name="KeyVideoTemplate">
-    <ePixmap pixmap="buttons/key_video.png" alphatest="blend" position="30,1031" size="52,38" />
-  </screen>
-  <screen name="KeyInfoTemplate">
-    <ePixmap pixmap="buttons/key_info.png" alphatest="blend" position="135,1031" size="52,38" />
-  </screen>
-  <screen name="KeyPrevNextTemplate">
-    <ePixmap pixmap="buttons/key_prevnext.png" alphatest="blend" position="135,1031" size="52,38" />
-  </screen>
-  <screen name="KeyZeroTemplate">
-    <ePixmap pixmap="buttons/key_0.png" alphatest="blend" position="30,1031" size="52,38" />
-  </screen>
-  <screen name="KeyOkTemplate">
-    <ePixmap pixmap="buttons/key_ok.png" alphatest="blend" position="30,1031" size="52,38" />
-  </screen>
-  <screen name="KeyOneTemplate">
-    <ePixmap pixmap="buttons/key_1.png" alphatest="blend" position="30,1031" size="52,38" />
-  </screen>
-  <screen name="KeyHelpLTemplate">
-    <ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="30,1031" size="52,38" />
-  </screen>
-  <screen name="KeyHelpMTemplate">
-    <ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="82,1031" size="52,38" />
-  </screen>
-  <screen name="KeyHelpRTemplate">
-    <ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="135,1031" size="52,38" />
-  </screen>
-  <screen name="KeyTextTemplate">
-    <ePixmap pixmap="buttons/key_text.png" alphatest="blend" position="619,1031" size="52,38" />
-  </screen>
-  <screen name="KeyTextTemplateBlue">
-    <ePixmap pixmap="buttons/key_text.png" alphatest="blend" position="1500,1032" size="52,38" />
-  </screen>
-  <screen name="KeyExit">
-    <ePixmap pixmap="buttons/key_exit.png" alphatest="blend" position="183,1032" size="52,38" />
-  </screen>
-  <screen name="CancelTemplate">
-    <ePixmap pixmap="buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
-    <widget name="canceltext" position="242,1030" zPosition="2" size="370,38" font="Regular;36" halign="left" backgroundColor="background" transparent="1" />
-  </screen>
-  <screen name="OKTemplate">
-    <ePixmap pixmap="buttons/green.png" position="628,1032" size="34,34" alphatest="blend" />
-    <widget name="oktext" position="678,1030" zPosition="2" size="370,38" font="Regular;34" halign="left" backgroundColor="background" transparent="1" />
-  </screen>
-  <screen name="CancelOKTemplate">
-    <panel name="CancelTemplate" />
-    <panel name="OKTemplate" />
-  </screen>
-  <screen name="KeyMenuInfoTemplate">
-    <panel name="KeyMenuTemplate" />
-    <panel name="KeyInfoTemplate" />
-  </screen>
+	<screen name="ButtonGraphicRed">
+		<widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="buttons/red.png" position="192,1032" size="34,34" zPosition="1" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<ePixmap objectTypes="key_red,Button,Label" pixmap="buttons/red.png" position="192,1032" size="34,34" zPosition="1" alphatest="blend"/>
+	</screen>
+	<screen name="ButtonGraphicGreen">
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="buttons/green.png" position="628,1032" size="34,34" zPosition="1" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<ePixmap objectTypes="key_green,Button,Label" pixmap="buttons/green.png" position="628,1032" size="34,34" zPosition="1" alphatest="blend"/>
+	</screen>
+	<screen name="ButtonGraphicYellow">
+		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="buttons/yellow.png" position="1064,1032" size="34,34" zPosition="1" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<ePixmap objectTypes="key_yellow,Button,Label" pixmap="buttons/yellow.png" position="1064,1032" size="34,34" zPosition="1" alphatest="blend"/>
+	</screen>
+	<screen name="ButtonGraphicBlue">
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="buttons/blue.png" position="1500,1032" size="34,34" zPosition="1" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<ePixmap objectTypes="key_blue,Button,Label" pixmap="buttons/blue.png" position="1500,1032" size="34,34" zPosition="1" alphatest="blend"/>
+	</screen>
+<!-- Button Text Templates -->
+	<screen name="ButtonTextRed">
+		<widget objectTypes="key_red,Label,Button" name="key_red" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="242,1030" size="370,38" backgroundColor="black" zPosition="2" transparent="1" font="Regular;34" halign="left"/>
+	</screen>
+	<screen name="ButtonTextGreen">
+		<widget objectTypes="key_green,Label,Button" name="key_green" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="678,1030" size="370,38" backgroundColor="black" zPosition="2" transparent="1" font="Regular;34" halign="left"/>
+	</screen>
+	<screen name="ButtonTextYellow">
+		<widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="1114,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="1114,1030" size="370,38" backgroundColor="black" zPosition="2" transparent="1" font="Regular;34" halign="left"/>
+	</screen>
+	<screen name="ButtonTextBlue">
+		<widget objectTypes="key_blue,Label,Button" name="key_blue" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1550,1030" size="370,38" backgroundColor="black" zPosition="2" transparent="1" font="Regular;34" halign="left"/>
+	</screen>
+<!-- Individual Button Templates -->
+	<screen name="ButtonRed">
+		<panel name="ButtonGraphicRed"/>
+		<panel name="ButtonTextRed"/>
+	</screen>
+	<screen name="ButtonGreen">
+		<panel name="ButtonGraphicGreen"/>
+		<panel name="ButtonTextGreen"/>
+	</screen>
+	<screen name="ButtonYellow">
+		<panel name="ButtonGraphicYellow"/>
+		<panel name="ButtonTextYellow"/>
+	</screen>
+	<screen name="ButtonBlue">
+		<panel name="ButtonGraphicBlue"/>
+		<panel name="ButtonTextBlue"/>
+	</screen>
+<!-- Buttons Template -->
+	<screen name="ButtonTemplate">
+		<panel name="ButtonRed"/>
+		<panel name="ButtonGreen"/>
+		<panel name="ButtonYellow"/>
+		<panel name="ButtonBlue"/>
+	</screen>
+	<screen name="KeyBooleanTemplate">
+		<panel name="KeyMenuAutoTemplate"/>
+		<panel name="KeyInfoAutoTemplate"/>
+		<panel name="VKeyIconPanel"/>
+	</screen>
+	<screen name="KeyMenuAutoTemplate"><!-- show with Components.Sources.Boolean -->
+		<widget source="key_menu" conditional="key_menu" render="Pixmap" pixmap="buttons/key_menu.png" alphatest="blend" position="82,1031" size="52,38">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+	</screen>
+	<screen name="KeyInfoAutoTemplate"><!-- show with Components.Sources.Boolean -->
+		<widget source="key_info" conditional="key_info" render="Pixmap" pixmap="buttons/key_info.png" alphatest="blend" position="135,1031" size="52,38">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+	</screen>
+	<screen name="KeyChannelTemplate">
+		 <ePixmap pixmap="buttons/key_channel.png" alphatest="blend" position="30,1031" size="52,38"/>
+	</screen>
+	<screen name="KeyMenuTemplate">
+		 <ePixmap pixmap="buttons/key_menu.png" alphatest="blend" position="82,1031" size="52,38"/>
+	</screen>
+	<screen name="KeyVideoTemplate">
+		 <ePixmap pixmap="buttons/key_video.png" alphatest="blend" position="30,1031" size="52,38"/>
+	</screen>
+	<screen name="KeyInfoTemplate">
+		<ePixmap pixmap="buttons/key_info.png" alphatest="blend" position="135,1031" size="52,38"/>
+	</screen>
+	<screen name="KeyPrevNextTemplate">
+		<ePixmap pixmap="buttons/key_prevnext.png" alphatest="blend" position="135,1031" size="52,38"/>
+	</screen>
+	<screen name="KeyZeroTemplate">
+		<ePixmap pixmap="buttons/key_0.png" alphatest="blend" position="30,1031" size="52,38"/>
+	</screen>
+	<screen name="KeyOkTemplate">
+		<ePixmap pixmap="buttons/key_ok.png" alphatest="blend" position="30,1031" size="52,38"/>
+	</screen>
+	<screen name="KeyOneTemplate">
+		<ePixmap pixmap="buttons/key_1.png" alphatest="blend" position="30,1031" size="52,38"/>
+	</screen>
+	<screen name="KeyHelpLTemplate">
+		<ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="30,1031" size="52,38"/>
+	</screen>
+	<screen name="KeyHelpMTemplate">
+		<ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="82,1031" size="52,38"/>
+	</screen>
+	<screen name="KeyHelpRTemplate">
+		<ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="135,1031" size="52,38"/>
+	</screen>
+	<screen name="KeyTextTemplate">
+		<ePixmap pixmap="buttons/key_text.png" alphatest="blend" position="619,1031" size="52,38"/>
+	</screen>
+	<screen name="KeyTextTemplateBlue">
+		<ePixmap pixmap="buttons/key_text.png" alphatest="blend" position="1500,1032" size="52,38"/>
+	</screen>
+	<screen name="KeyExit">
+		<ePixmap pixmap="buttons/key_exit.png" alphatest="blend" position="183,1032" size="52,38"/>
+	</screen>
+	<screen name="CancelTemplate">
+		<ePixmap pixmap="buttons/red.png" position="192,1032" size="34,34" alphatest="blend"/>
+		<widget name="canceltext" position="242,1030" zPosition="2" size="370,38" font="Regular;36" halign="left" backgroundColor="background" transparent="1"/>
+	</screen>
+	<screen name="OKTemplate">
+		<ePixmap pixmap="buttons/green.png" position="628,1032" size="34,34" alphatest="blend"/>
+		<widget name="oktext" position="678,1030" zPosition="2" size="370,38" font="Regular;34" halign="left" backgroundColor="background" transparent="1"/>
+	</screen>
+	<screen name="CancelOKTemplate" >
+		<panel name="CancelTemplate"/>
+		<panel name="OKTemplate"/>
+	</screen>
+	<screen name="KeyMenuInfoTemplate">
+		<panel name="KeyMenuTemplate"/>
+		<panel name="KeyInfoTemplate"/>
+	</screen>
+<!-- Config and list template. Some people use "config" and others use "list" -->
+	<screen name="ConfigTemplate">
+		<widget name="config" conditional="config" position="780,105" size="1110,900" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
+		<widget name="list" conditional="list" position="780,100" size="1110,900" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
+	</screen>
+	<screen name="DescriptionTemplate">
+		<widget name="description" objectTypes="description,Button,Label" position="30,570" size="720,300" font="Regular;32" valign="top" halign="block"/>
+		<widget source="description" render="Label" objectTypes="description,StaticText" position="30,570" size="720,300" font="Regular;32" valign="top" halign="block"/>
+	</screen>
+  <!-- Hideable buttons -->	
+	<screen name="KeyPrevNextTemplate_Hideable">
+		<widget name="h_prev" pixmap="buttons/key_prev.png" zPosition="1" alphatest="blend" position="30,1031" size="52,38"/>
+		<widget name="h_next" pixmap="buttons/key_next.png" zPosition="1" alphatest="blend" position="82,1031" size="52,38"/>
+	</screen>
   <!-- Config and list template. Some people use "config" and others use "list" -->
   <screen name="ConfigTemplate">
     <widget name="config" conditional="config" position="780,105" size="1110,900" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
@@ -421,48 +434,7 @@
     <widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="3,310" zPosition="1" size="1,1" transparent="1" alphatest="on" />
     <widget name="introduction" conditional="introduction" position="0,0" size="0,0" />
   </screen>
-  <!-- Hideable buttons -->
-  <screen name="KeyPrevNextTemplate_Hideable">
-    <widget name="h_prev" pixmap="buttons/key_prev.png" zPosition="1" alphatest="blend" position="30,1031" size="52,38" />
-    <widget name="h_next" pixmap="buttons/key_next.png" zPosition="1" alphatest="blend" position="82,1031" size="52,38" />
-  </screen>
-
-  <!-- cf#_#rename -->
-  <screen name="wizard_rc_templateNew">
-    <widget name="rc" pixmaps="rc.png,rcold.png" position="1475,250" zPosition="10" size="154,500" alphaTest="blend" transparent="0" />
-    <widget alphaTest="blend" name="indicatorU0" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorU1" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorU2" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorU3" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorU4" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorU5" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorU6" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorU7" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorU8" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorU9" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorU10" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorU11" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorU12" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorU13" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorU14" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorU15" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorL0" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorL1" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorL2" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorL3" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorL4" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorL5" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorL6" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorL7" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorL8" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorL9" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorL10" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorL11" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorL12" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorL13" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorL14" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-    <widget alphaTest="blend" name="indicatorL15" pixmap="skin_default/yellow_circle23x23.png" position="1425,210" offset="11,11" size="23,23" zPosition="11" />
-  </screen>
+	
   <screen name="wizard_rc_template">
     <widget name="rc" position="955,100" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphaTest="blend" />
     <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphaTest="blend" />
@@ -473,7 +445,7 @@
   <!-- *************************************** -->   
 	<!-- Volume -->
     <screen backgroundColor="background" zPosition="10" flags="wfNoBorder" name="Volume" position="185,30" size="1550,40" title="Volume">
-     <widget backgroundColor="background" font="Regular;30" halign="center" position="1442,3" render="VolumeText" size="60,35" source="global.CurrentTime" zPosition="4" foregroundColor="white" transparent="1" />
+     <widget backgroundColor="background" font="Regular;30" halign="center" position="1442,3" render="VolumeText" size="60,35" source="global.CurrentTime" zPosition="3" foregroundColor="white" transparent="1" />
      <eLabel text="%" position="1505,2" size="40,35" zPosition="5" halign="left" font="Regular;30" backgroundColor="background" transparent="1" />
      <widget name="Volume" pixmap="infobar/volume.png" position="20,10" size="1400,20" zPosition="10" transparent="1" />
     </screen>
@@ -2346,11 +2318,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + 
   </screen>
   <!-- Skin Selector -->
   <screen name="SkinSelector" position="fill" flags="wfNoBorder">
-  	<panel name="Background" />  
-    <panel name="SelectionTemplate" />
-    <widget name="preview" position="165,660" size="420,315" alphatest="on" />		
-    <widget source="skins" render="Listbox" position="780,100" size="1110,870" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="6" transparent="1">
-      <convert type="TemplatedMultiContent">
+  	    <panel name="Background" />  
+		<panel name="SelectionTemplate"/>
+		<widget name="preview" position="165,660" size="420,315" alphatest="on"/>
+		<widget source="skins" render="Listbox" position="780,100" size="1110,912" enableWrapAround="1" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
 				{
 				"template": [
 					MultiContentEntryText(pos = (15, 0), size = (725, 45), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 7)
@@ -2359,9 +2331,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + 
 				"itemHeight": 45
 				}
 			</convert>
-    </widget>
-    <widget source="description" render="Label" position="30,570" size="720,300" zPosition="1" transparent="1" font="Regular;30" halign="center" />
-  </screen>
+		</widget>
+		<widget source="description" render="Label" position="30,570" size="720,300" zPosition="1" transparent="1" font="Regular;30" halign="center"/>
+	</screen>
   <!-- Nim selection -->
   <screen name="NimSelection" position="fill" flags="wfNoBorder">
   	<panel name="Background" />   
