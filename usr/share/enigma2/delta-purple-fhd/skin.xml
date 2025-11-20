@@ -90,9 +90,9 @@
 	<!-- Window -->
 
 	<windowstyle id="0" type="skinned">
-    <color name="Background" color="MidnightBlue" /> <!-- mod -->
+    <color name="Background" color="transparent" /> <!-- mod -->
     <color name="LabelForeground" color="foreground" />
-    <color name="ListboxBackground" color="DarkBlue" />
+    <color name="ListboxBackground" color="transparent" />
     <color name="ListboxForeground" color="foreground" />
     <color name="ListboxSelectedBackground" color="selectorcolor" />
     <color name="ListboxSelectedForeground" color="selectedFG" />
