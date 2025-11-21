@@ -192,7 +192,7 @@
 	    <eLabel position="10,1020" size="1900,2" backgroundColor="white" />
 	    </screen>
 	    <screen name="TextTemplate">
-		<widget name="text" position="30,528" size="720,481" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;30"/>
+		<widget name="text" position="30,528" size="720,481" backgroundColor="transparent" transparent="1" zPosition="1" font="Regular;30" foregroundColor="white"/>
 	    </screen>
 	    <screen name="SelectionTemplate">
 		<panel name="BasicTemplate"/>
@@ -215,7 +215,7 @@
         <panel name="PigTemplate" />	
   	    <panel name="Background" />
 		<panel name="ButtonTemplate"/>
-		<widget source="menu" render="Listbox" position="780,105" size="1110,900" font="Regular;32" transparent="1" scrollbarMode="showOnDemand">
+		<widget source="menu" render="Listbox" position="780,105" size="1110,900" font="Regular;32" foregroundColor="white" transparent="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (75,15),size = (1035,45),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
 		"fonts": [gFont("Regular",36)],
@@ -372,12 +372,12 @@
 	</screen>
 <!-- Config and list template. Some people use "config" and others use "list" -->
 	<screen name="ConfigTemplate">
-		<widget name="config" conditional="config" position="780,105" size="1110,900" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
-		<widget name="list" conditional="list" position="780,100" size="1110,900" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
+		<widget name="config" conditional="config" position="780,105" size="1110,900" itemHeight="38" font="Regular;28" foregroundColor="white" transparent="1" scrollbarMode="showOnDemand"/>
+		<widget name="list" conditional="list" position="780,100" size="1110,900" itemHeight="38" font="Regular;28" foregroundColor="white" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen>
 	<screen name="DescriptionTemplate">
-		<widget name="description" objectTypes="description,Button,Label" position="30,570" size="720,300" font="Regular;32" valign="top" halign="block"/>
-		<widget source="description" render="Label" objectTypes="description,StaticText" position="30,570" size="720,300" font="Regular;32" valign="top" halign="block"/>
+		<widget name="description" objectTypes="description,Button,Label" position="30,570" size="720,300" font="Regular;32" foregroundColor="white" valign="top" halign="block"/>
+		<widget source="description" render="Label" objectTypes="description,StaticText" position="30,570" size="720,300" font="Regular;32" foregroundColor="white" valign="top" halign="block"/>
 	</screen>
 	<screen name="KeyPrevNextTemplate_Hideable">
 		<widget name="h_prev" pixmap="buttons/key_prev.png" zPosition="1" alphatest="blend" position="30,1031" size="52,38"/>
