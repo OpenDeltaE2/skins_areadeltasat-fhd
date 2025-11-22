@@ -98,8 +98,7 @@
     <color name="yellowsoft" value="#00ccac68" />
     <color name="yellowtransparent" value="#084b4b00" />
 	<color name="fucsia" value="#f400a1" />
-		<color name="purple" value="#330099"/>
-		<color name="bluedark" value="#000033"/>
+	<color name="bluedark" value="#000033"/>
 	</colors>
 	
   <!-- Parameters -->	
@@ -445,8 +444,8 @@
 
   <!-- *************************************** -->   
 	<!-- Volume -->
-    <screen backgroundColor="background" zPosition="10" flags="wfNoBorder" name="Volume" position="185,30" size="1550,40" title="Volume">
-     <widget backgroundColor="background" font="Regular;30" halign="center" position="1442,3" render="VolumeText" size="60,35" source="global.CurrentTime" zPosition="4" foregroundColor="white" transparent="1" />
+    <screen backgroundColor="bluetransparent" zPosition="10" flags="wfNoBorder" name="Volume" position="185,30" size="1550,40" title="Volume">
+     <widget backgroundColor="bluetransparent" font="Regular;30" halign="center" position="1442,3" render="VolumeText" size="60,35" source="global.CurrentTime" zPosition="10" foregroundColor="white" transparent="1" />
      <eLabel text="%" position="1505,2" size="40,35" zPosition="5" halign="left" font="Regular;30" backgroundColor="background" transparent="1" />
      <widget name="Volume" pixmap="infobar/volume.png" position="20,10" size="1400,20" zPosition="10" transparent="1" />
     </screen>
@@ -474,7 +473,7 @@
 
   <!-- InfoBar -->
   <screen name="InfoBar" position="0,0" size="1920,1080" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
-    <eLabel name="" position="0,0" size="1920,76" backgroundColor="transpBlack" />
+    <eLabel name="" position="0,0" size="1920,76" backgroundColor="bluetransparent" />
   <ePixmap pixmap="infobar/infobar-blue.jpg" position="0,840" size="1920,240" transparent="0" zPosition="-3" />
     <eLabel name="" position="0,1070" size="1920,10" backgroundColor="black" zPosition="-3" /> 
     <eLabel position="0,840" size="1920,2" backgroundColor="red" />	
