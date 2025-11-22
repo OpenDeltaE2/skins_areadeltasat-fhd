@@ -199,11 +199,13 @@
       </widget>
       <widget source="global.CurrentTime" render="Label" position="1700,20" size="220,30" backgroundColor="transparent" transparent="1" zPosition="1" font="Menu;28" valign="center" halign="left">
          <convert type="ClockToText">Format:%H:%M:%S</convert>
-      </widget>	  
+      </widget>
+	  <eLabel position="10,80" size="1900,2" backgroundColor="white" />	  
   </screen>
   <screen name="BasicTemplate">
     <panel name="TopTemplate" />
     <panel name="ButtonTemplate" />
+	<eLabel position="10,1015" size="1900,2" backgroundColor="white" />	
   </screen>
   <screen name="TextTemplate">
     <widget name="text" position="30,522" size="720,481" backgroundColor="transparent" transparent="1" zPosition="1" font="Regular;30" />
@@ -214,6 +216,7 @@
     <widget source="session.CurrentService" render="Label" position="30,125" size="720,30" zPosition="1" foregroundColor="white" transparent="1" font="Regular;28" borderColor="black" borderWidth="2" noWrap="1" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
+	<eLabel position="764,90" size="2,915" backgroundColor="white" />	
   </screen>
   <screen name="PigTemplate">
     <panel name="SelectionTemplate" />
@@ -445,7 +448,7 @@
   <!-- *************************************** -->   
 	<!-- Volume -->
     <screen backgroundColor="bluetransparent" zPosition="10" flags="wfNoBorder" name="Volume" position="185,30" size="1550,40" title="Volume">
-     <widget backgroundColor="bluetransparent" font="Regular;30" halign="center" position="1442,3" render="VolumeText" size="60,35" source="global.CurrentTime" zPosition="10" foregroundColor="white" transparent="1" />
+     <widget backgroundColor="background" font="Regular;30" halign="center" position="1442,3" render="VolumeText" size="60,35" source="global.CurrentTime" zPosition="4" foregroundColor="white" transparent="1" />
      <eLabel text="%" position="1505,2" size="40,35" zPosition="5" halign="left" font="Regular;30" backgroundColor="background" transparent="1" />
      <widget name="Volume" pixmap="infobar/volume.png" position="20,10" size="1400,20" zPosition="10" transparent="1" />
     </screen>
